@@ -1,0 +1,38 @@
+.extensionBody {
+    padding-bottom: 1em;
+    text-align: center;
+    gap: 8px;
+    display: flex;
+    flex-direction: column;
+    width: 100px;
+}
+
+a, button {
+    padding:8px;
+    color:#fff;
+    font-weight:600;
+    cursor: pointer;
+}
+
+a:hover, #mailModel:hover {
+    opacity: 75%;
+    color: #000000;
+}
+
+#mailModel {
+    background:grey;
+}
+
+#printDeclaration {
+    background:black;
+}
+
+#printDeclaration:hover {
+    background:white;
+    color: black;
+}
+
+#sendMail {
+    background: #ff5555;
+    text-decoration: none;
+}

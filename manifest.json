@@ -1,0 +1,26 @@
+{
+  "manifest_version": 3,
+  "name": "Triagem extensão",
+  "version": "1.0",
+  "description": "Pra facilitar a vida na triagem. © by miguel ©",
+  "permissions": [
+    "activeTab",
+    "scripting",
+    "storage",
+    "tabs"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": "icon.png"
+  },
+  "content_scripts": [
+    {
+      "css": ["style.css"],
+      "matches": ["https://*.mgraneis.com.br/triagem/agendamento_por_codigo.*"],
+      "js": ["content.js"]
+    }
+  ]
+}
