@@ -20,10 +20,10 @@ Id do agendamento de exemplo: 185558
 Em seguiga clique na extensão
 ![image](https://github.com/user-attachments/assets/f15b6683-da9d-4fa9-8209-49e300d6f9dd)
 
-6. Definição das funcionalidades:
-DADOS: abre um campo com um modelo de e-mail para cargas refugadas
-ENVIAR EMAIL: redireciona diretamente para o email padrao do sistema
-DECLARAÇÃO: cria o documento de declaração que deve ser assinado pelo motorista em casos de retorno origem (importante que as configurações da impressão estejam no padrão para criar o documento corretamente)
+6. Definição das funcionalidades:  
+DADOS: abre um campo com um modelo de e-mail para cargas refugadas  
+ENVIAR EMAIL: redireciona diretamente para o email padrao do sistema  
+DECLARAÇÃO: cria o documento de declaração que deve ser assinado pelo motorista em casos de retorno origem (importante que as configurações da impressão estejam no padrão para criar o documento corretamente)  
 ![image](https://github.com/user-attachments/assets/18bb4893-4a02-4c59-878e-00ecf391957e)
 
 ## Configurando Webmail como cliente padrão de e-mail do sistema
