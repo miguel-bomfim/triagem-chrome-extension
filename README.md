@@ -9,7 +9,7 @@
 
 3. Clique em carregar sem compactação e selecione a pasta descompactada com os arquivos da extensão
 ![image](https://github.com/user-attachments/assets/1f8abefd-4229-4555-a50b-2c616479e5cd)
-![image](https://github.com/user-attachments/assets/fd6a7b65-adad-4c1a-a85e-9e323edf42c9)
+![image](https://github.com/user-attachments/assets/7ed9a303-6fd6-4d39-bf19-b01bdfed8d17)
 
 4. Clique no icone das extensões e em seguida no icone de pin para fixar a extensão no navegador
 ![image](https://github.com/user-attachments/assets/d6883dfa-e7d4-4aab-8d25-0bbdc7583cd1)
