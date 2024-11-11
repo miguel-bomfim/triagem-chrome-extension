@@ -33,4 +33,10 @@ Essa configuração é importante que a funcionalidade "ENVIAR EMAIL" funcione c
    
 2. Na coluna Programas, selecione o google chrome para envio de e-mails;
 
-3. 
+3. Abra o webmail e siga os seguintes passos:
+![image](https://github.com/user-attachments/assets/7318b215-2cd4-4efb-86a0-2a5c0fafd613)
+
+4. Após esses passos abrirá um pop up na tela, clique em Permitir
+![image](https://github.com/user-attachments/assets/628134bf-2445-47dd-bf8f-9b85e826625a)
+
+E tá pronto pra uso.
