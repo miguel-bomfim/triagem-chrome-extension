@@ -3,26 +3,26 @@ const mailGroups = {
   "be8": {
 	"principais": "eduardo.martins@be8energy.com, fernando.jantchc@be8energy.com",
 	"emCopy": "Controle <controle@serramorena.com.br>, DANIEL ALVES <daniel.alves@serramorena.com.br>, Flavio Controle Serra Morena <flavio.souza@serramorena.com.br>, Lider Triagem <triagem.imbituba@serramorena.com.br>, PAULO NUNES <paulo.nunes@serramorena.com.br>",
-	"emCopyReprov": "andre.gomes@bureauveritas.com, celso.toshimitsu@bureauveritas.com, Controle <controle@serramorena.com.br>, DANIEL ALVES <daniel.alves@serramorena.com.br>, esnildo.matias@bureauveritas.com, Flavio Controle Serra Morena <flavio.souza@serramorena.com.br>, gabriela.klein@bureauveritas.com, Lider Triagem <triagem.imbituba@serramorena.com.br>, luciano.gomes@bureauveritas.com, magnun.pereira@bureauveritas.com, PAULO NUNES <paulo.nunes@serramorena.com.br>, rodrigo.pacheco@bureauveritas.com"
+	"emCopyReprov": "Controle <controle@serramorena.com.br>, DANIEL ALVES <daniel.alves@serramorena.com.br>, Flavio Controle Serra Morena <flavio.souza@serramorena.com.br>, Lider Triagem <triagem.imbituba@serramorena.com.br>, PAULO NUNES <paulo.nunes@serramorena.com.br>"
   },
 
   "viterra": {
-	"principais": "diego.leite@viterra.com, marco.rolim@viterra.com, maringa.logistica@viterra.com, rodrigo.santos@viterra.com, saopaulo.logistica@viterra.com",
+	"principais": "qualidade.vagri@viterra.com, diego.leite@viterra.com, maringa.logistica@viterra.com, rodrigo.santos@viterra.com, saopaulo.logistica@viterra.com",
 	"emCopy": "Controle <controle@serramorena.com.br>, DANIEL ALVES <daniel.alves@serramorena.com.br>, Flavio Controle Serra Morena <flavio.souza@serramorena.com.br>, Lider Triagem <triagem.imbituba@serramorena.com.br>, PAULO NUNES <paulo.nunes@serramorena.com.br>",
-	"emCopyReprov": "andre.gomes@bureauveritas.com, celso.toshimitsu@bureauveritas.com, Controle <controle@serramorena.com.br>, DANIEL ALVES <daniel.alves@serramorena.com.br>, esnildo.matias@bureauveritas.com, Flavio Controle Serra Morena <flavio.souza@serramorena.com.br>, gabriela.klein@bureauveritas.com, Lider Triagem <triagem.imbituba@serramorena.com.br>, luciano.gomes@bureauveritas.com, magnun.pereira@bureauveritas.com, marco.rolim@viterra.com, PAULO NUNES <paulo.nunes@serramorena.com.br>, qualidade@viterra.com, Raphael Jabbour <Raphael.Jabbour@viterra.com>, rodrigo.pacheco@bureauveritas.com"
+	"emCopyReprov": "Controle <controle@serramorena.com.br>, DANIEL ALVES <daniel.alves@serramorena.com.br>, Flavio Controle Serra Morena <flavio.souza@serramorena.com.br>, Lider Triagem <triagem.imbituba@serramorena.com.br>, PAULO NUNES <paulo.nunes@serramorena.com.br>, qualidade@viterra.com, Raphael Jabbour <Raphael.Jabbour@viterra.com>, rafael.gazetta@fidescontrol.com, salim.sfeir@fidescontrol.com, gabriel.bonilha@fidescontrol.com, anilo.bonetti@fidescontrol.com, alberto.scardino@fidescontrol.com",
   },
 
   "olam": {
 	"principais": "fiscalcoe.br@olamagri.com, kaique.alves@olamagri.com, log.br@olamagri.com, oga_maringa@olamagri.com",
 	"emCopy":  "Controle <controle@serramorena.com.br>, DANIEL ALVES <daniel.alves@serramorena.com.br>, Flavio Controle Serra Morena <flavio.souza@serramorena.com.br>, Lider Triagem <triagem.imbituba@serramorena.com.br>, PAULO NUNES <paulo.nunes@serramorena.com.br>",
-	"emCopyReprov": "andre.gomes@bureauveritas.com, celso.toshimitsu@bureauveritas.com, Controle <controle@serramorena.com.br>, DANIEL ALVES <daniel.alves@serramorena.com.br>, esnildo.matias@bureauveritas.com, Flavio Controle Serra Morena <flavio.souza@serramorena.com.br>, gabriela.klein@bureauveritas.com, Lider Triagem <triagem.imbituba@serramorena.com.br>, luciano.gomes@bureauveritas.com, magnun.pereira@bureauveritas.com, PAULO NUNES <paulo.nunes@serramorena.com.br>, rodrigo.pacheco@bureauveritas.com"
+	"emCopyReprov": "Controle <controle@serramorena.com.br>, DANIEL ALVES <daniel.alves@serramorena.com.br>, Flavio Controle Serra Morena <flavio.souza@serramorena.com.br>, Lider Triagem <triagem.imbituba@serramorena.com.br>, PAULO NUNES <paulo.nunes@serramorena.com.br>"
   },
 
   "safras": {
 	"principais": "jefferson.valle@safrasagroindustria.com, john.siqueira@safrasagroindustria.com, logistica@safrasagroindustria.com",
 	"emCopy":  "",
-	"emCopyReprov": "andre.gomes@bureauveritas.com, celso.toshimitsu@bureauveritas.com, Controle <controle@serramorena.com.br>, DANIEL ALVES <daniel.alves@serramorena.com.br>, esnildo.matias@bureauveritas.com, Flavio Controle Serra Morena <flavio.souza@serramorena.com.br>, gabriela.klein@bureauveritas.com, Lider Triagem <triagem.imbituba@serramorena.com.br>, luciano.gomes@bureauveritas.com, magnun.pereira@bureauveritas.com, PAULO NUNES <paulo.nunes@serramorena.com.br>, rodrigo.pacheco@bureauveritas.com"
-  }
+	"emCopyReprov": "Controle <controle@serramorena.com.br>, DANIEL ALVES <daniel.alves@serramorena.com.br>, Flavio Controle Serra Morena <flavio.souza@serramorena.com.br>, Lider Triagem <triagem.imbituba@serramorena.com.br>, PAULO NUNES <paulo.nunes@serramorena.com.br>"
+  },
 }
 
 const greetingMessage = () => {
@@ -286,11 +286,6 @@ mywindow.document.write(`<body style="padding:64px;display: flex;flex-direction:
         return true;    
 }
 
-
-
-
-
-
 chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
   if (message.action === 'createTextArea') {
    createTextA();
@@ -301,27 +296,3 @@ chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
  printData();
  }
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
