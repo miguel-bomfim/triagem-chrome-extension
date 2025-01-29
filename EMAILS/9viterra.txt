@@ -1,0 +1,34 @@
+PRINCIPAIS = [
+diego.leite@viterra.com
+maringa.logistica@viterra.com
+qualidade.vagri@viterra.com
+rodrigo.santos@viterra.com
+saopaulo.logistica@viterra.com
+]
+
+EM_COPIA = [
+controle@serramorena.com.br
+daniel.alves@serramorena.com.br
+flavio.souza@serramorena.com.br
+triagem.imbituba@serramorena.com.br
+paulo.nunes@serramorena.com.br
+]
+
+EM_COPIA_REPROVADOS = [
+alberto.scardino@fidescontrol.com
+controle@serramorena.com.br
+daniel.alves@serramorena.com.br
+danilo.bonetti@fidescontrol.com
+flavio.souza@serramorena.com.br
+gabriel.bonilha@fidescontrol.com
+triagem.imbituba@serramorena.com.br
+paulo.nunes@serramorena.com.br
+qualidade@viterra.com
+rafael.gazetta@fidescontrol.com
+raphael.jabbour@viterra.com
+salim.sfeir@fidescontrol.com
+]
+
+
+
+

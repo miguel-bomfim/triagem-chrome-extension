@@ -1,0 +1,33 @@
+PRINCIPAIS = [
+fiscalcoe.br@olamagri.com
+kaique.alves@olamagri.com
+log.br@olamagri.com
+oga_maringa@olamagri.com
+]
+
+EM_COPIA = [
+controle@serramorena.com.br
+daniel.alves@serramorena.com.br
+flavio.souza@serramorena.com.br
+triagem.imbituba@serramorena.com.br
+paulo.nunes@serramorena.com.br
+]
+
+EM_COPIA_REPROVADOS = [
+andre.gomes@bureauveritas.com
+celso.toshimitsu@bureauveritas.com
+controle@serramorena.com.br
+daniel.alves@serramorena.com.br
+esnildo.matias@bureauveritas.com
+flavio.souza@serramorena.com.br
+gabriela.klein@bureauveritas.com
+triagem.imbituba@serramorena.com.br
+luciano.gomes@bureauveritas.com
+magnun.pereira@bureauveritas.com
+paulo.nunes@serramorena.com.br
+rodrigo.pacheco@bureauveritas.com
+]
+
+
+
+
