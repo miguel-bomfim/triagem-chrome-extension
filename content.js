@@ -25,6 +25,28 @@ const mailGroups = {
   },
 }
 
+chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
+  try {
+    if (message.action === 'updateData') {
+      loadAgendamentoData();
+      sendMailData();
+    }
+
+    if (message.action === 'createTextArea') {
+      loadAgendamentoData();
+      createTextA();
+    }
+
+    if (message.action === 'printDeclaration') {
+      loadAgendamentoData({ requireMotorista: true });
+      printData();
+    }
+  } catch (error) {
+    console.warn('Nao foi possivel processar os dados do agendamento:', error);
+    sendResponse?.({ ok: false, error: error.message });
+  }
+});
+
 const greetingMessage = () => {
     let h = new Date().getHours()
     if (h < 12) return 'Bom dia!'
@@ -35,6 +57,18 @@ const greetingMessage = () => {
 let date = `${("0" +  new Date().getDate()).slice(-2)}/${("0" + (new Date().getMonth() + 1)).slice(-2)}`
 
 const trLines = document.getElementsByTagName("tr");
+
+let motoraNome;
+let motoraCpf;
+let comitente;
+let codigoAgend;
+let placa;
+let nfe;
+let emitente;
+let peso;
+let produto;
+let transportadora;
+let cte;
 
 function getAgendamentoData() {
 
@@ -48,39 +82,47 @@ for (var i = 0; i < trLines.length; i++) {
 return agendamentoItems
 }
 
-const motorista = getAgendamentoData().find((element) => element.includes('Motorista'))
-const motoraNome = motorista.split('\t')[1].match(/[a-zA-Z]+/gu).join(" ")
+function loadAgendamentoData({ requireMotorista = false } = {}) {
+  const rows = getAgendamentoData();
+  const findRow = (label) => rows.find((element) => element.includes(label));
+  const requireRow = (label) => {
+    const row = findRow(label);
 
-const motoraCpf = motorista.split('\t')[1].match(/([0-9]{2}[\.]?[0-9]{3}[\.]?[0-9]{3}[\/]?[0-9]{4}[-]?[0-9]{2})|([0-9]{3}[\.]?[0-9]{3}[\.]?[0-9]{3}[-]?[0-9]{2})/)[0]
+    if (!row) {
+      throw new Error(`Campo obrigatorio ausente: ${label}`);
+    }
 
+    return row;
+  };
 
-const comitente = getAgendamentoData().find((element) =>
-  element.includes("Comitente")
-);
+  comitente = requireRow('Comitente');
+  codigoAgend = requireRow('Código');
+  placa = requireRow('Placa');
+  emitente = requireRow('Emitente');
+  produto = requireRow('Produto');
+  transportadora = requireRow('Transportadora');
+  nfe = rows.filter((element) => element.includes('Número NF'));
+  peso = rows.filter((element) => element.includes('Peso líquido'));
+  cte = rows.filter((element) => element.includes('CTE'));
 
-const codigoAgend = getAgendamentoData().find((element) =>
-  element.includes("Código")
-);
+  if (nfe.length === 0) throw new Error('Campo obrigatorio ausente: Número NF');
+  if (peso.length === 0) throw new Error('Campo obrigatorio ausente: Peso líquido');
+  if (cte.length === 0) throw new Error('Campo obrigatorio ausente: CTE');
 
-const placa = getAgendamentoData().find((element) => element.includes("Placa"));
+  if (requireMotorista) {
+    const motorista = requireRow('Motorista');
+    const motoristaData = motorista.split('\t')[1] || '';
+    const nomeMatch = motoristaData.match(/[a-zA-Z]+/gu);
+    const cpfMatch = motoristaData.match(/([0-9]{2}[\.]?[0-9]{3}[\.]?[0-9]{3}[\/]?[0-9]{4}[-]?[0-9]{2})|([0-9]{3}[\.]?[0-9]{3}[\.]?[0-9]{3}[-]?[0-9]{2})/);
 
-const nfe = getAgendamentoData().filter((element) => element.includes("Número NF"));
+    if (!nomeMatch || !cpfMatch) {
+      throw new Error('Dados do motorista estão incompletos');
+    }
 
-const emitente = getAgendamentoData().find((element) =>
-  element.includes("Emitente")
-);
-
-const peso = getAgendamentoData().filter((element) =>
-  element.includes("Peso líquido")
-);
-
-const produto = getAgendamentoData().find((element) => element.includes("Produto"));
-
-const transportadora = getAgendamentoData().find((element) =>
-  element.includes("Transportadora")
-);
-
-const cte = getAgendamentoData().filter((element) => element.includes("CTE"));
+    motoraNome = nomeMatch.join(' ');
+    motoraCpf = cpfMatch[0];
+  }
+}
 
 const itemReducer = (item) => {
   return item?.split(":")[1].trim();
@@ -211,17 +253,6 @@ chrome.runtime.sendMessage({ action: 'updateHref', data: data });
 }
 
 
-function updateData() {
-sendMailData();
-}
-
-chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
-  if (message.action === 'updateData') {
-   updateData();
- }
-});	
-
-
 function createTextA() {
 const textArea = document.createElement('textarea')
 
@@ -286,13 +317,3 @@ mywindow.document.write(`<body style="padding:64px;display: flex;flex-direction:
         return true;    
 }
 
-chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
-  if (message.action === 'createTextArea') {
-   createTextA();
- }
-
-  if (message.action === 'printDeclaration') {
-
- printData();
- }
-});
